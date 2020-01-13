@@ -1,0 +1,34 @@
+{
+    "version": 2,
+    "name": "My lovely gateway",
+    "port": 8080,
+    "cache_ttl": "3600s",
+    "timeout": "1s",
+    "endpoints": [
+        {
+            "endpoint": "/chilsung",
+            "method": "GET",
+            "backend": [
+                {
+                    "host": [
+                        "http://52.231.72.70:5000"
+                    ],
+                    "url_pattern": "/"
+                }
+            ]
+        },
+
+        {
+            "endpoint": "/products/{storeid}/{shelfid}",
+            "method": "POST",
+            "backend": [
+                {
+                    "host": [
+                        "http://52.231.72.70:5000"
+                    ],
+                    "url_pattern": "/products/{storeid}/{shelfid}"
+                }
+            ]
+        }
+    ]
+}
