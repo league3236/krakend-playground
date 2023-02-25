@@ -11,5 +11,5 @@ require (
 	github.com/tmthrgd/go-hex v0.0.0-20190303111820-0bdcb15db631 // indirect
 	github.com/tmthrgd/go-memset v0.0.0-20190303110500-e5f30bc33f57 // indirect
 	github.com/tmthrgd/go-popcount v0.0.0-20190303105726-88afd59bff20 // indirect
-	golang.org/x/sys v0.0.0-20190515120540-06a5c4944438 // indirect
+	golang.org/x/sys v0.1.0 // indirect
 )
